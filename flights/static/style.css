@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+}

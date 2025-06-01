@@ -1,0 +1,618 @@
+[
+{
+  "model": "flights.airport",
+  "pk": 1,
+  "fields": {
+    "code": "OYO",
+    "city": "ibadan"
+  }
+},
+{
+  "model": "flights.airport",
+  "pk": 2,
+  "fields": {
+    "code": "OGB",
+    "city": "Ogbomoso"
+  }
+},
+{
+  "model": "flights.flight",
+  "pk": 1,
+  "fields": {
+    "origin": "1",
+    "destination": "1",
+    "departure_time": null,
+    "arrival_time": null,
+    "seats_available": 97
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "flights",
+    "model": "airport"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "flights",
+    "model": "flight"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "flights",
+    "model": "booking"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "flights",
+    "model": "seat"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "06c3w5wncs39211g93a77q3wvkuizayf",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAFpgwu3XuGZoYBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnZdThd2OKj1Q3IHeqt6Zjq8s8sd4UvdOur03S87K7fweFevnWFnImMFGY2brEjpKAZYN4Cpw9AzpHwQTJCch4jAhHGYwwAPoBrXp_AAyhOEY:1uGycF:O-W9E-i24LrCAyGf9zaX_BzgC0K4KCQB_Ff0ZxouAQw",
+    "expire_date": "2025-06-02T11:25:07.297Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "adnu7k7od3pj1zrr2tu427vl9o4wlxfr",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAFpgwu3XuGZoYBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnZdThd2OKj1Q3IHeqt6Zjq8s8sd4UvdOur03S87K7fweFevnWFnImMFGY2brEjpKAZYN4Cpw9AzpHwQTJCch4jAhHGYwwAPoBrXp_AAyhOEY:1uEs6r:MR04FoKKN6IFV5EQdtHxwfBMfLueuPcsqdDa7HPInK8",
+    "expire_date": "2025-05-27T16:04:01.349Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "c7g8c1goruma5wd12dzvyzy3p5zc0v4o",
+  "fields": {
+    "session_data": "e30:1uGgi0:NfD0pW88IFkp2o0BaWQM-qpZPSYTVUa3eJH9m4FNp0k",
+    "expire_date": "2025-06-01T16:17:52.437Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jsizzsvp3kkkgdfn35kppgmnznptr56t",
+  "fields": {
+    "session_data": "e30:1uGHxX:GhAx_7Xaa6OcYtdi6_ABXloziQD5vHwBn3nKpVLtzfU",
+    "expire_date": "2025-05-31T13:52:15.587Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "k1c4u0ls08oiaus5uia0j3mfhi9jkx8e",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pCOA6W4dN8zkIEZpGpoUtqV8e7apAvd_vfef6lA21rC1mQJE6uLAnX63SKlh9Qd8J3qbdZprusyRb0r-qBNjzPL83q4fweFWvnWEaxzg4dBnEEgIMEzGvGejbcRXMwJu2gdQ3aEtrdEjNIDZGONYKfeH8VQNz8:1uI7tP:KaH5adtEvRdyesMIYUNVZcVtBCZcHI137ECdp1ix15g",
+    "expire_date": "2025-06-05T15:31:35.717Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "o3enesho8e5v6l2tnovjex7phfv2or34",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAFpgwu3XuGZoYBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnZdThd2OKj1Q3IHeqt6Zjq8s8sd4UvdOur03S87K7fweFevnWFnImMFGY2brEjpKAZYN4Cpw9AzpHwQTJCch4jAhHGYwwAPoBrXp_AAyhOEY:1uGHmf:3fipNfBAgoYVPB_Np6IO5jd2bQvkwWpfk6qjwcj1MlQ",
+    "expire_date": "2025-05-31T13:41:01.118Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "od5brtah3s44oszwu010qosidorom530",
+  "fields": {
+    "session_data": "e30:1uGHwx:srIv0IAyk1b2vc9EKNib1RkpHJAMimFxbaBRY3A3O3k",
+    "expire_date": "2025-05-31T13:51:39.963Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pxjv0g5v4964e6l0m79usezc3hf3zlb0",
+  "fields": {
+    "session_data": "e30:1uGHxa:2mLUWLnJ2umQiipFgLIQPj2JJohzhKMtuo9Wm0ZPyMY",
+    "expire_date": "2025-05-31T13:52:18.231Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pylxtl4lrkmg5pvanddfu849o3rkrfw3",
+  "fields": {
+    "session_data": "e30:1uGgUN:cQb3HVxHzSJtmym8-oy6arnP2UybUQGifhCmSeacy9g",
+    "expire_date": "2025-06-01T16:03:47.711Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x4nihs7wdoegvsdjtmh8k7npbls9lj2h",
+  "fields": {
+    "session_data": "e30:1uGgXg:SyFHbpQ6bPawGdD4R8FhtHoFJMPJ7c9-5miBpIuxbe8",
+    "expire_date": "2025-06-01T16:07:12.872Z"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add airport",
+    "content_type": [
+      "flights",
+      "airport"
+    ],
+    "codename": "add_airport"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change airport",
+    "content_type": [
+      "flights",
+      "airport"
+    ],
+    "codename": "change_airport"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete airport",
+    "content_type": [
+      "flights",
+      "airport"
+    ],
+    "codename": "delete_airport"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view airport",
+    "content_type": [
+      "flights",
+      "airport"
+    ],
+    "codename": "view_airport"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add flight",
+    "content_type": [
+      "flights",
+      "flight"
+    ],
+    "codename": "add_flight"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change flight",
+    "content_type": [
+      "flights",
+      "flight"
+    ],
+    "codename": "change_flight"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete flight",
+    "content_type": [
+      "flights",
+      "flight"
+    ],
+    "codename": "delete_flight"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view flight",
+    "content_type": [
+      "flights",
+      "flight"
+    ],
+    "codename": "view_flight"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add booking",
+    "content_type": [
+      "flights",
+      "booking"
+    ],
+    "codename": "add_booking"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change booking",
+    "content_type": [
+      "flights",
+      "booking"
+    ],
+    "codename": "change_booking"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete booking",
+    "content_type": [
+      "flights",
+      "booking"
+    ],
+    "codename": "delete_booking"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view booking",
+    "content_type": [
+      "flights",
+      "booking"
+    ],
+    "codename": "view_booking"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add seat",
+    "content_type": [
+      "flights",
+      "seat"
+    ],
+    "codename": "add_seat"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change seat",
+    "content_type": [
+      "flights",
+      "seat"
+    ],
+    "codename": "change_seat"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete seat",
+    "content_type": [
+      "flights",
+      "seat"
+    ],
+    "codename": "delete_seat"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view seat",
+    "content_type": [
+      "flights",
+      "seat"
+    ],
+    "codename": "view_seat"
+  }
+}

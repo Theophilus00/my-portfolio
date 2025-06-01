@@ -1,0 +1,12 @@
+{% extends "flights/base.html" %}
+{% block content %}
+  <h2>Book Flight: {{ flight.origin }} to {{ flight.destination }}</h2>
+
+  <form method="POST" action="{% url 'flights:book_flight' flight.id %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Book Flight</button>
+  </form>
+
+  <p><a href="{% url 'flights:my_bookings' %}">View My Bookings</a></p>
+{% endblock %}

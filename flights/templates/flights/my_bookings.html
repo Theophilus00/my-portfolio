@@ -1,0 +1,15 @@
+{% extends "flights/base.html" %}
+{% block content %}
+<h2>My Bookings</h2>
+
+{% if bookings %}
+    <ul>
+        {% for booking in bookings %}
+            <li>Flight from {{ booking.flight.origin }} to {{ booking.flight.destination }} - Seat: {{ booking.seat_number }} - Status: {{ booking.status }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No bookings yet!</p>
+{% endif %}
+
+{% endblock %}

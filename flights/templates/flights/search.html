@@ -1,0 +1,21 @@
+{% extends "flights/base.html" %}
+{% block content %}
+    <h2>Search Flights</h2>
+    <form action="" method="get">
+        <input type="text" name="origin" placeholder="Origin" required>
+        <input type="text" name="destination" placeholder="destination" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if flights %}
+        <a href="{% url 'book_seat' flight.id %}">Book seat</a>
+        <h3>Available Flights:</h3>
+        <ul>
+            {% for flight in flights %}
+                <li>{{  flight.id   }}: {{  flight.origin   }} -> {{    flight.destination}}</li>
+            {% endfor %}
+        </ul>
+        {% elif flights is not none %}
+            <p>No flights found.</p>
+        {% endif %}
+{% endblock %}

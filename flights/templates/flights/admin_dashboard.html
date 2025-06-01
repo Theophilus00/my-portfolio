@@ -1,0 +1,112 @@
+{% extends "flights/base.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+
+        canvas {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Booking Statistics</h1>
+    <canvas id="bookingChart" width="600" ></canvas>
+
+    <h2>Mnthly Booking Trends</h2>
+    <div>
+        <canvas id="monthlyChart" width="600" height="300"></canvas>
+    </div>
+
+    <h3>Summary stats</h3>
+    <ul>
+        <li><strong> Total Bookings: </strong> {{ total_bookings }}</li>
+    </ul>
+
+    <h3>Top 3 flights</h3>
+    <ol>
+        {% for flight in top_flights %}
+            <li>{{ flight.flight__origin }} -> {{ flight.flight__destination }} ({{ flight.count }} bookings)</li>
+        {% endfor %}
+    </ol>
+    <a href="{% url 'flights:admin_pdf_summary' %}" class="btn btn-primary">Download PDF Summary</a>
+
+    <!-- Safe JSON Data-->
+    
+
+     <script>
+        const labels = JSON.parse('{{ flight_labels_json|escapejs }}');
+        const data = JSON.parse('{{ flight_counts_json|escapejs }}');
+
+        const ctx = document.getElementById('bookingChart').getContext('2d');
+        const bookingChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label:"Bookings per Flight",
+                    data: data,
+                    backgroundColor: 'rgba(75,192,192,0.6)',
+                    borderColor: 'rgba(75,192,192,1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        tricks:{
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+
+        // Monthly booking chart
+        const monthLabels = JSON.parse('{{ month_labels_json|escapejs }}');
+        const monthCounts = JSON.parse('{{ month_counts_json|escapejs }}');
+
+        const monthlyChart = new Chart(document.getElementById("monthlyChart").getContext("2d"), {
+            type: 'line',
+            data: {
+                labels:monthLabels,
+                datasets: [{
+                    label: 'Bookings per month',
+                    data: monthCounts,
+                    borderColor: 'rgba(255,99,132,1)',
+                    backgroundColor: 'rgba(255,99,132,0.2)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        })
+     </script>
+</body>
+</html>
+{% endblock %}

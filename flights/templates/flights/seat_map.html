@@ -1,0 +1,28 @@
+<!-- templates/flights/seat_map.html -->
+<h2>Select Your Seat for Flight {{ flight.id }}</h2>
+<form method="POST">
+  {% csrf_token %}
+  <div class="seat-map">
+    {% for row in seat_rows %}
+      <div class="seat-row">
+        {% for seat in row %}
+          {% if seat.is_booked %}
+            <button disabled class="seat booked">{{ seat.seat_number }}</button>
+          {% else %}
+            <input type="radio" name="seat_id" value="{{ seat.id }}" id="{{ seat.seat_number }}">
+            <label class="seat available" for="{{ seat.seat_number }}">{{ seat.seat_number }}</label>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+  <button type="submit">Book Seat</button>
+</form>
+<style>
+    .seat { margin: 5px; padding: 10px; }
+    .booked { background: #f44336; color: white; }
+    .available { background: #4CAF50; color: white; cursor: pointer; }
+    .seat-map { display: grid; gap: 10px; }
+    .seat-row { display: flex; }
+</style>
+  
